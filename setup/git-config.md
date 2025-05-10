@@ -6,34 +6,38 @@ This guide helps you configure Git to suit your workflow. It covers global and l
 
 ## 🧾 1. Set Your User Identity
 
-This info is stored in every Git commit.
+This information is stored in every Git commit.
 
-### Global (applies to all repos):
+### Global (applies to all repositories):
 
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "your_email@example.com"
 ```
 
-### Local (overrides global in the current repo):
+### Local (overrides global in the current repository):
 
 ```bash
 git config user.name "Work Name"
 git config user.email "work_email@example.com"
 ```
 
+---
+
 ## 🛠️ 2. Common Global Settings
 
-```
+```bash
 # Set default branch name
 git config --global init.defaultBranch main
 
 # Use VS Code (or any editor) as Git's editor
 git config --global core.editor "code --wait"
 
-# Enable helpfull color output
+# Enable helpful color output
 git config --global color.ui auto
 ```
+
+---
 
 ## ✨ 3. Useful Git Aliases
 
@@ -54,20 +58,25 @@ git co main
 git cm -m "Add feature"
 ```
 
+---
+
 ## 📜 4. Key Git Configuration Options
 
 Here are some of the most useful Git configuration options:
-| Setting | Purpose | Command |
-|---------|---------|---------|
-| user.name | Set your name for commits| git config --global user.name "Your name" |
-| user.email | Set your email for commits | git config user.email "your_email@example.com" |
-| init.defaultBranch | Set the default branch name when initializing a repo | git config --global init.defaultBranch main |
-| core.editor | Set the default editor for Git (e.g., VS Code, Vim, etc.) | git config --global core.editor "code --wait" |
-| color.ui | Enable Git command color output | git config --global color.ui auto |
-| alias.<alias> | Create a custom alias for a Git command | git config --global alias.co checkout |
-| merge.tool | Set the default merge tool (e.g., vimdiff, meld) | git config --global merge.tool vimdiff |
-| core.autocrlf | Handle line endings automatically on Windows systems | git config --global core.autocrlf true |
-| push.default | Define the default push behavior (e.g., simple, matching) | git config --global push.default simple |
+
+| Setting            | Purpose                                                   | Command                                              |
+|--------------------|-----------------------------------------------------------|-----------------------------------------------------|
+| `user.name`        | Set your name for commits                                 | `git config --global user.name "Your Name"`         |
+| `user.email`       | Set your email for commits                                | `git config user.email "your_email@example.com"`    |
+| `init.defaultBranch` | Set the default branch name when initializing a repo    | `git config --global init.defaultBranch main`       |
+| `core.editor`      | Set the default editor for Git (e.g., VS Code, Vim, etc.) | `git config --global core.editor "code --wait"`     |
+| `color.ui`         | Enable Git command color output                           | `git config --global color.ui auto`                |
+| `alias.<alias>`    | Create a custom alias for a Git command                   | `git config --global alias.co checkout`            |
+| `merge.tool`       | Set the default merge tool (e.g., vimdiff, meld)          | `git config --global merge.tool vimdiff`           |
+| `core.autocrlf`    | Handle line endings automatically on Windows systems      | `git config --global core.autocrlf true`           |
+| `push.default`     | Define the default push behavior (e.g., simple, matching) | `git config --global push.default simple`          |
+
+---
 
 ## 📁 5. View Current Config
 
@@ -79,12 +88,16 @@ git config --list
 git config --global --list
 ```
 
-## 🧹 5. Remove a Config Setting
+---
+
+## 🧹 6. Remove a Config Setting
 
 ```bash
 # Unset a global setting
 git config --global --unset user.email
 ```
+
+---
 
 ## 💬 Pro Tip
 
@@ -95,6 +108,8 @@ cd ~/projects/work-repo/
 git config user.name "Work Name"
 git config user.email "work@example.com"
 ```
+
+---
 
 ## 📚 Resources
 
