@@ -12,6 +12,7 @@ Whether you're setting up Git for the first time, managing multiple GitHub accou
 | ---------------------------- | ---------------------------------------------------------------- |
 | `git-config.md`              | Basic Git configuration (username, email, editor, aliases, etc.) |
 | `ssh-key-setup.md`           | Generate and use SSH keys with GitHub                            |
+| `create-new-repo.md`         | Create a new repository and set it up on your local system       |
 | `linux-multiple-accounts.md` | Manage multiple GitHub accounts on a Linux system using SSH      |
 | `windows-setup.md`           | Set up Git and GitHub tools on Windows (Git Bash, WSL, etc.)     |
 
