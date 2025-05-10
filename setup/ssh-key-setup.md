@@ -123,7 +123,7 @@ git clone git@github.com-personal:username/repo.git
 ## 📚 Related Guides
 
 - [Git Configuration Guide](./git-config.md)
-- [Linux Multiple Accounts Setup](./linux-multiple-accounts-setup.md)
+- [Multiple GitHub Accounts Setup](./linux-multiple-github-accounts-setup.md)
 
 ---
 
