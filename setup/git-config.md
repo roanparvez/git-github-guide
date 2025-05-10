@@ -54,7 +54,22 @@ git co main
 git cm -m "Add feature"
 ```
 
-## 📁 4. View Current Config
+## 📜 4. Key Git Configuration Options
+
+Here are some of the most useful Git configuration options:
+| Setting | Purpose | Command |
+|---------|---------|---------|
+| user.name | Set your name for commits| git config --global user.name "Your name" |
+| user.email | Set your email for commits | git config user.email "your_email@example.com" |
+| init.defaultBranch | Set the default branch name when initializing a repo | git config --global init.defaultBranch main |
+| core.editor | Set the default editor for Git (e.g., VS Code, Vim, etc.) | git config --global core.editor "code --wait" |
+| color.ui | Enable Git command color output | git config --global color.ui auto |
+| alias.<alias> | Create a custom alias for a Git command | git config --global alias.co checkout |
+| merge.tool | Set the default merge tool (e.g., vimdiff, meld) | git config --global merge.tool vimdiff |
+| core.autocrlf | Handle line endings automatically on Windows systems | git config --global core.autocrlf true |
+| push.default | Define the default push behavior (e.g., simple, matching) | git config --global push.default simple |
+
+## 📁 5. View Current Config
 
 ```bash
 # View all settings
